@@ -1,1 +1,12 @@
+/* Make the tall section */
+.main-content {
+  background-color: #f8f9fa; /* Light gray background */
+  height: 1000px; /* Very tall */
+  padding: 20px;
+}
+
+/* Make dropdown menu background different */
+.navbar-collapse {
+  background-color: #ddd; /* Light gray menu background for mobile */
+}
 
