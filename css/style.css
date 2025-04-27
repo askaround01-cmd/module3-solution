@@ -1,54 +1,73 @@
+/* General body styles */
 body {
   font-family: 'Comic Neue', cursive, sans-serif;
   margin: 0;
   padding: 0;
+  background: #f9f9f9;
 }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  padding: 30px 0;
+/* Navbar styling */
+.navbar {
+  font-size: 20px;
 }
 
+.navbar-brand {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.nav-link {
+  color: #555;
+}
+
+.nav-link:hover {
+  color: #dc3545; /* Bootstrap danger red */
+}
+
+/* Heading */
 h1 {
-  text-align: center;
-  color: red;
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 40px;
+  color: #ff4b5c;
 }
 
+/* Menu Section Cards */
 .menu-section {
-  background-color: #e0e0e0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  transition: all 0.3s ease-in-out;
-  height: 450px; /* force sections tall enough to scroll */
-  animation: fadeIn 1s ease-out;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  height: 100%;
+  animation: fadeIn 1s ease forwards;
+  transition: all 0.3s ease;
 }
 
 .menu-section:hover {
-  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.6);
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(255, 75, 92, 0.6);
 }
 
+/* Section Titles */
 .menu-section h2 {
-  text-align: center;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
+  text-align: center;
   margin-bottom: 15px;
+  color: #333;
 }
 
+/* Paragraphs */
 .menu-section p {
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
+  color: #555;
 }
 
+/* Back to top link */
 .back-to-top {
   display: block;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 20px;
   color: #007bff;
   text-decoration: none;
 }
@@ -57,36 +76,38 @@ h1 {
   text-decoration: underline;
 }
 
+/* Responsive adjustments */
 @media (max-width: 991px) {
-  .col-md-6 {
-    flex: 0 0 45%;
+  .menu-section {
+    margin-bottom: 30px;
   }
 }
 
-@media (max-width: 767px) {
-  .col-sm-12 {
-    flex: 0 0 100%;
-  }
-}
-
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Fade-in Animation */
+/* Fade-in animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* Add animation delay for each section */
-.col-lg-4:nth-child(1) .menu-section {
+/* Staggered animation delays */
+.col-md-4:nth-child(1) .menu-section {
   animation-delay: 0s;
 }
-.col-lg-4:nth-child(2) .menu-section {
+.col-md-4:nth-child(2) .menu-section {
   animation-delay: 0.3s;
 }
-.col-lg-4:nth-child(3) .menu-section {
+.col-md-4:nth-child(3) .menu-section {
   animation-delay: 0.6s;
 }
 
