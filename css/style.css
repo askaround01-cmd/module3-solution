@@ -1,49 +1,67 @@
-/* General body padding */
 body {
-  padding: 0 15px;
+  font-family: 'Comic Neue', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navbar background */
-.navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
 }
 
-/* Menu item background */
-.menu-item {
-  background-color: #d3d3d3;
-  padding: 20px;
-  margin-bottom: 20px;
-  height: 1000px; /* make it really tall */
-  overflow: auto;
-}
-
-/* Center the h1 */
 h1 {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  color: #ff4c4c;
+  text-align: center;
+  color: red;
   font-size: 48px;
-  margin-top: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 0 0 30%;
   margin-bottom: 30px;
 }
 
-/* Menu item headings */
-.menu-item h3 {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  font-weight: bold;
+.menu-section {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-section:hover {
+  box-shadow: 0 4px 20px rgba(255, 0, 0, 0.6);
+  transform: translateY(-5px);
+}
+
+.menu-section h2 {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-/* Menu item text */
-.menu-item p {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+.menu-section p {
   font-size: 16px;
+  line-height: 1.6;
 }
 
-/* Back to top link */
-.menu-item a {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
-  color: #4d90fe;
+.back-to-top {
   display: block;
-  margin-top: 10px;
+  text-align: center;
+  margin-top: 15px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.back-to-top:hover {
+  text-decoration: underline;
 }
