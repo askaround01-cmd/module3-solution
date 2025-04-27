@@ -1,12 +1,49 @@
-/* Make the tall section */
-.main-content {
-  background-color: #f8f9fa; /* Light gray background */
-  height: 1000px; /* Very tall */
+/* General body padding */
+body {
+  padding: 0 15px;
+}
+
+/* Navbar background */
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+}
+
+/* Menu item background */
+.menu-item {
+  background-color: #d3d3d3;
   padding: 20px;
+  margin-bottom: 20px;
+  height: 1000px; /* make it really tall */
+  overflow: auto;
 }
 
-/* Make dropdown menu background different */
-.navbar-collapse {
-  background-color: #ddd; /* Light gray menu background for mobile */
+/* Center the h1 */
+h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #ff4c4c;
+  font-size: 48px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
+/* Menu item headings */
+.menu-item h3 {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Menu item text */
+.menu-item p {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 16px;
+}
+
+/* Back to top link */
+.menu-item a {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #4d90fe;
+  display: block;
+  margin-top: 10px;
+}
