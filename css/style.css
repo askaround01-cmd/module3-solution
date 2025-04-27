@@ -65,3 +65,40 @@ h1 {
 .back-to-top:hover {
   text-decoration: underline;
 }
+
+/* ===== ADD THIS FOR RESPONSIVENESS ===== */
+@media (max-width: 991px) {
+  .col {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col {
+    flex: 0 0 100%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ===== Fade-in Animation ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-section {
+  /* Keep your existing styles... */
+  animation: fadeIn 1s ease-out;
+}
+/* Add delay to each box */
+.col:nth-child(1) .menu-section {
+  animation-delay: 0s;
+}
+.col:nth-child(2) .menu-section {
+  animation-delay: 0.3s;
+}
+.col:nth-child(3) .menu-section {
+  animation-delay: 0.6s;
+}
+
